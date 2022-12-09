@@ -1,0 +1,81 @@
+#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,G2,G2,G2,G2,G2,G2,G2,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#
+#,#,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,#,#
+#,#,#,r ,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,r ,r ,#,#
+#,#,#,r ,|,#,#,#,#,#,#,#,#,#,#,#,#,#,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,r ,*,|,|,|,*,r ,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,|,r ,#,#,#
+#,#,#,r ,|,#,D,D,D,D,D,D,D,D,D,D,D,#,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,r ,*,|,*,|,*,r ,Ds,Ds,Ds,Ds,Ds,#,#,#,#,#,#,Ds,Ds,|,|,|,|,|,|,|,|,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,|,r ,#,#,#
+#,#,#,#,r ,#,D,D,D,D,D,D,D,D,D,D,D,#,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,r ,*,|,*,|,*,r ,Ds,Ds,Ds,Ds,Ds,#,w,w,w,w,#,#,Ds,#,#,#,#,#,#,#,#,|,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,|,r ,#,#,#
+#,#,#,#,r ,|,#,D,#,#,#,#,#,#,#,#,#,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,r ,*,|,*,|,*,r ,Ds,Ds,Ds,Ds,Ds,#,w,w,w,w,w,#,e,#,e,e,e,e,e,e,#,Ds,|,|,Ds,Ds,Ds,Ds,Ds,Ds,Ds,|,r ,#,#,#
+#,#,#,#,r ,|,|,D(D2),D,D,D,#,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,r ,*,|,|,|,*,r ,Ds,Ds,Ds,Ds,Ds,#,w,w,w,w,w,#,e,#,e,e,e,e,e,e,#,Ds,Ds,Ds,|,|,Ds,Ds,Ds,Ds,|,r ,#,#,#,#
+#,#,#,#,#,r ,|,#,D,D,#,Ds,Ds,Ds,#,#,#,#,#,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,r ,*,|,*,|,*,r ,Ds,Ds,Ds,Ds,Ds,#,w,w,w,w,w,#,|,#,e,e,e,e,e,#,#,Ds,Ds,Ds,Ds,Ds,|,|,Ds,Ds,|,r ,#,#,#,#
+#,#,#,#,#,r ,|,#,D,D,#,Ds,Ds,Ds,#,D,D,D,#,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,r ,*,|,*,|,*,r ,Ds,Ds,Ds,Ds,Ds,#,#,#,w(D),#,w,#,Ds,#,#,e,e,e,e,#,#,#,#,S,#,#,|,|,|,Ds,|,r ,#,#,#,#
+#,#,#,#,#,r ,|,#,D,D,D(D1),Ds,Ds,Ds,#,#,#,#,D,#,#,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,r ,*,|,|,|,*,r ,r ,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,#,#,#,Ds,Ds,#,#,e,e,e,#,#,#,S,S,S,#,#,#,|,|,|,r ,#,#,#,#
+#,#,#,#,#,r ,|,#,D,D,#,Ds,Ds,Ds,Ds,Ds,Ds,#,D,D,#,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,|,|,|,|,|,|,|,|,r ,r ,r ,r ,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,#,#,e,e,#,#,S,S,S,S,S,S,#,#,|,|,r ,#,#,#,#
+#,#,#,#,#,r ,|,#,D,D,D,#,Ds,Ds,Ds,Ds,Ds,#,D,D,#,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,|,|,*,*,*,*,*,*,*,*,|,|,|,r ,r ,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,#,e(D),#,#,C,C,S,S,S,S,S,S,#,#,|,r ,#,#,#,#
+#,#,#,#,#,r ,|,#,#,D,D,#,Ds,Ds,Ds,Ds,Ds,#,D,D,#,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,|,|,|,*,*,|,|,|,|,|,|,|,|,*,*,*,|,|,r ,r ,r ,r ,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,|,#,C,C,S,S,S,A,S,S,S,#,|,r ,#,#,#,#
+#,#,#,#,#,#,r ,|,#,D,D,#,#,#,#,#,#,#,D,D,#,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,|,*,*,*,|,|,|,Ds,Ds,|,Ds,Ds,Ds,|,|,|,|,*,*,|,|,|,|,r ,Ds,Ds,Ds,Ds,Ds,Ds,|,*,#,#,S,S,S,S,S,S,S,#,#,r ,#,#,#,#,#
+#,#,#,#,#,#,r ,|,#,D,D,D,D,D,D,D,D,D,D,D,#,Ds,Ds,Ds,Ds,Ds,|,|,|,*,|,|,|,Ds,Ds,Ds,Ds,Ds,|,Ds,Ds,Ds,Ds,Ds,Ds,|,|,|,*,*,*,*,|,r ,r ,r ,Ds,Ds,Ds,|,r ,*,#,#,S,S,S,S,S,#,#,|,r ,#,#,#,#,#
+#,#,#,#,#,#,r ,|,#,D,D,D,D,D,D,D,D,D,D,D,#,Ds,Ds,Ds,Ds,|,|,*,*,|,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,|,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,|,|,|,|,*,*,|,|,|,r ,r ,|,r ,r ,*,r ,#,#,S,S,S,#,#,|,|,r ,#,#,#,#,#
+#,#,#,#,#,#,r ,|,#,#,#,#,#,#,#,#,#,#,#,#,#,Ds,Ds,|,|,*,*,|,|,|,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,|,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,|,|,|,*,*,*,|,|,r ,r ,r ,r ,r ,r ,#,S,S,S,#,|,|,r ,#,#,#,#,#,#
+#,#,#,#,#,#,#,r ,|,r ,*,*,*,*,*,*,*,*,Ds,Ds,|,|,|,*,*,|,|,|,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,|,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,|,|,*,*,|,r ,r ,r ,r ,r ,*,#,S,S,S,#,|,|,r ,#,#,#,#,#,#
+#,#,#,#,#,#,#,r ,|,r ,*,*,*,*,*,*,*,*,|,|,*,*,*,|,|,|,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,|,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,*,|,|,|,*,|,r ,r ,r ,r ,r ,#,S,S,S,#,|,|,r ,#,#,#,#,#,#
+#,#,#,#,#,#,#,r ,|,r ,*,*,*,*,*,*,*,*,|,*,|,|,|,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,|,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,|,|,*,|,r ,r ,r ,*,#,#,S(D),#,#,|,|,r ,#,#,#,#,#,#
+#,#,#,#,#,#,#,r ,|,r ,*,*,*,*,*,*,*,|,*,|,|,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,#,#,#,#,#,|,#,#,#,#,#,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,r ,|,|,*,|,r ,r ,*,r ,r ,|,|,|,|,|,r ,#,#,#,#,#,#
+#,#,#,#,#,#,#,r ,|,r ,*,*,*,*,*,*,*,|,*,|,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,#,#,#,#,AC,AC,AC,Ca,AC(D),Ca,AC,AC,AC,#,#,#,#,Ds,Ds,Ds,Ds,Ds,Ds,*,*,r ,*,*,|,|,*,|,r ,r ,*,r ,|,|,|,|,|,r ,#,#,#,#,#,#
+#,#,#,#,#,#,#,r ,|,r ,*,*,*,*,*,*,|,*,|,|,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,#,#,#,AC,AC,AC,AC,AC,AC,Ca,Ca,Ca,AC,AC,AC,AC,AC(G20),AC(G19),#,#,Ds,Ds,Ds,Ds,Ds,*,r ,*,*,*,*,|,*,|,r ,r ,r ,r ,r ,|,|,|,r ,#,#,#,#,#,#,#
+#,#,#,#,#,#,#,#,r ,|,*,*,Ds,Ds,Ds,|,|,*,|,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,#,AC,AC,AC,AC,Ca,Ca,Ca,Ca,Ca,Ca,Ca,Ca,Ca,AC,AC,AC,AC,AC(G18),#,#,Ds,Ds,Ds,*,r ,*,*,*,*,*,|,|,*,|,r ,r ,|,|,|,|,|,r ,#,#,#,#,#,#,#
+#,#,#,#,#,#,#,#,r ,|,Ds,*,Ds,Ds,|,|,*,|,|,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,#,#,AC,AC,AC,Ca,Ca,Ca,Ca,Ca,Ca,Ca,Ca,Ca,Ca,Ca,Ca,,AC,AC,AC(G12),#,#,Ds,Ds,r ,*,*,*,*,*,*,*,|,|,*,|,r ,|,|,|,|,|,r ,#,#,#,#,#,#,#
+#,#,#,#,#,#,#,#,r ,|,Ds,*,Ds,Ds,Ds,|,*,|,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,#,AC,AC,AC,Ca,Ca,Ca,Ca,Ca,Ca,Ca,Ca,Ca,Ca,Ca,Ca,Ca,Ca,Ca,AC,AC(Zone B),AC(G11),#,Ds,r ,*,*,*,*,*,*,*,*,*,|,|,*,|,|,|,|,|,|,r ,#,#,#,#,#,#,#
+#,#,#,#,#,#,#,#,r ,|,Ds,*,Ds,Ds,|,*,|,|,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,#,AC,AC,AC,Ca,Ca,Ca,Ca,Ca,Ca,Ca,Ca,Ca,Ca,Ca,Ca,Ca,Ca,Ca,AC,AC(Zone B),AC(G10),#,r ,*,*,*,*,*,*,*,*,*,*,*,|,*,|,|,|,|,|,|,r ,#,#,#,#,#,#,#
+#,#,#,#,#,#,#,#,r ,|,Ds,*,Ds,|,*,|,|,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,#,AC,AC,AC,Ca,Ca,Ca,Ca,Ca,Ca,Ca,Ca,Ca,Ca,Ca,Ca,Ca,Ca,Ca,AC,AC(Zone B),AC(G9),#,r ,*,*,*,*,*,*,*,*,*,*,*,|,*,|,|,|,|,|,|,r ,#,#,#,#,#,#,#
+#,#,#,#,#,#,#,#,r ,|,Ds,*,Ds,|,*,|,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,#,AC,AC,AC,Ca,Ca,Ca,Ca,Ca,Ca,Ca,Ca,Ca,Ca,Ca,Ca,Ca,Ca,Ca,AC,AC(Zone B),AC(G8),#,*,*,*,*,*,*,*,*,*,*,*,*,|,*,|,|,|,|,|,|,r ,#,#,#,#,#,#,#
+#,#,#,#,#,#,#,#,r ,|,Ds,*,|,*,|,|,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,#,AC,AC,AC,Ca,AC,AC,AC,AC(Toilets),"AC(G6, security room)",AC,AC,AC,AC,AC,AC,AC,AC(G11),AC,AC,AC(Zone B),AC(G7),AC(D),|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,G3,#,#,#,#,#,#,#
+#,#,#,#,#,#,#,#,G4,r ,|,*,|,*,|,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,#,AC,AC,AC,#,AC,AC,AC,AC,AC(ATM),AC,AC,AC(Security room),AC,AC,AC,AC,AC(G12),AC,AC,AC(Zone B),AC(G6),#,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,G3,#,#,#,#,#,#,#
+#,#,#,#,#,#,#,#,G4,r ,|,|,|,*,|,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,#,AC,AC,AC,#,AC,AC,AC,AC,AC,#,AC(D1),#,AC(G1),AC(F),AC(F),AC(F),AC(G13),AC,AC,AC(Zone B),AC(G5),#,r ,r ,*,*,*,*,*,*,*,*,*,*,|,*,|,*,*,*,*,|,G3,#,#,#,#,#,#,#
+#,#,#,#,#,#,#,#,G4,r ,|,|,|,*,|,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,#,#,#,#,#,AC,AC,AC,AC,AC,#,r ,#,AC(cats office),AC(F),AC(F),AC(F),AC(G14),#,#,#,#,#,*,r ,r ,r ,r ,*,*,*,*,*,*,*,|,*,|,*,*,*,*,|,G3,#,#,#,#,#,#,#
+#,#,#,#,#,#,#,#,G4,r ,|,|,|,*,|,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,#,#,AC,AC,AC,AC,AC,#,r ,#,AC(G14),AC(F),AC(F),AC(F),AC(G15),#,#,Ds,Ds,Ds,Ds,Ds,*,r ,r ,*,*,*,*,*,*,*,|,*,|,*,*,*,*,|,G3,#,#,#,#,#,#,#
+#,#,#,#,#,#,#,#,G4,r ,|,|,|,*,|,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,#,AC,AC,AC,AC,AC,#,r ,#,AC(G15),AC(F),AC(F),AC(F),AC,#,Ds,Ds,Ds,Ds,Ds,Ds,Ds,*,*,r ,r ,*,*,*,*,*,|,*,|,*,*,*,*,|,G3,#,#,#,#,#,#,#
+#,#,#,#,#,#,#,#,G4,r ,|,|,|,*,|,Ds,Ds,Ds,Ds,Ds,Ds,*,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,#,AC,AC,AC,AC,AC,#,r ,#,AC(Locker),AC(Locker),AC(Locker),AC(Locker),AC(Locker),#,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,|,|,*,r ,*,r ,*,*,|,*,|,*,*,*,*,|,G3,#,#,#,#,#,#,#
+#,#,#,#,#,#,#,#,G4,r ,|,|,|,*,|,Ds,Ds,Ds,Ds,Ds,*,Ds,#,#,#,#,Ds,Ds,Ds,Ds,Ds,#,#,#,#,#,#,#,r ,#,#,#,#,#,#,#,r ,Ds,Ds,Ds,Ds,Ds,Ds,#,#,#,|,*,r ,*,r ,*,|,*,|,*,*,*,*,|,r ,#,#,#,#,#,#,#
+#,#,#,#,#,#,#,#,r ,|,|,|,|,*,|,Ds,Ds,Ds,Ds,*,Ds,#,#,N,N,#,#,Ds,Ds,Ds,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,Ds,r ,r ,Ds,Ds,Ds,#,H(D2),H,#,#,|,*,*,*,r ,|,*,|,*,*,*,|,|,r ,#,#,#,#,#,#,#
+#,#,#,#,#,#,#,#,r ,|,|,|,|,*,|,Ds,Ds,Ds,*,Ds,#,N(D1),N,N,N,N,#,#,Ds,r ,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,r ,r ,Ds,Ds,r ,r ,r ,#,H,H,H,#,#,|,*,*,r ,|,*,|,*,*,*,|,r ,#,#,#,#,#,#,#,#
+#,#,#,#,#,#,#,#,r ,|,|,|,|,*,|,Ds,Ds,*,Ds,#,#,N,N,N,N,N,N,#,r ,#,#,CC,CC,CC,CC,CC,CC,CC,CC,CC,CC,CC,CC,CC,#,#,#,r ,r ,Ds,Ds,Ds,#,#,H,H,H,H(D1),#,|,*,r ,|,*,|,*,*,*,|,r ,#,#,#,#,#,#,#,#
+#,#,#,#,#,#,#,#,r ,|,|,|,|,|,*,|,Ds,Ds,#,#,N,N,N,N,N,N,#,#,r ,#,CC,CC,CC,#,#,#,CC,CC,CC,CC,CC,CC,CC,CC,CC,#,#,#,#,r ,Ds,Ds,r ,#,#,H,H,H,#,#,|,*,|,*,|,*,*,*,|,r ,#,#,#,#,#,#,#,#
+#,#,#,#,#,#,#,#,r ,|,|,|,|,|,|,|,|,Ds,#,N,N,N,N,N,N,#,#,r ,#,#,#,#,#,#,r ,#,CC,CC,CC,CC,CC,#,#,#,CC,CC,CC,CC,#,r ,Ds,Ds,Ds,r ,#,#,H,H,H,#,#,|,|,*,|,*,*,*,|,r ,#,#,#,#,#,#,#,#
+#,#,#,#,#,#,#,#,#,r ,|,|,|,|,|,|,|,*,#,#,N,N,N,N,#,#,Ds,r ,#,#,#,r ,r ,r ,r ,#,CC,CC,CC,CC,CC,#,r ,#,#,#,CC,CC,#,r ,Ds,Ds,Ds,Ds,r ,#,#,H,H,H,#,*,|,*,|,*,*,*,|,r ,#,#,#,#,#,#,#,#
+#,#,#,#,#,#,#,#,#,#,r ,|,P,P,P,|,*,|,*,#,#,N,N,#,#,Ds,r ,r ,r ,r ,r ,Ds,Ds,Ds,r ,#,CC,CC,CC,CC,CC,#,r ,r ,r ,#,#,#,#,r ,Ds,Ds,Ds,Ds,Ds,r ,#,H(D3),H,#,#,*,|,*,|,*,*,*,|,r ,#,#,#,#,#,#,#,#
+#,#,#,#,#,#,#,#,#,#,r ,|,*,P,P,P,|,*,|,*,#,#,#,#,Ds,r ,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,r ,#,CC,CC,CC,CC,CC,#,r ,Ds,Ds,r ,r ,r ,r ,r ,Ds,Ds,Ds,Ds,Ds,r ,#,#,#,#,*,|,|,*,|,*,*,*,|,r ,#,#,#,#,#,#,#,#
+#,#,#,#,#,#,#,#,#,#,r ,|,P,*,P,P,P,|,*,|,*,*,r ,Ds,r ,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,r ,#,CC,CC,CC,CC,CC,#,r ,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,r ,r ,r ,*,*,|,*,|,*,*,*,|,r ,#,#,#,#,#,#,#,#,#
+#,#,#,#,#,#,#,#,#,#,r ,|,P,*,P,P,P,P,|,*,|,r ,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,r ,#,CC,CC,CC,CC,CC,#,r ,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,r ,|,|,*,|,*,*,*,|,r ,#,#,#,#,#,#,#,#,#
+#,#,#,#,#,#,#,#,#,#,r ,|,P,*,*,*,P,P,|,*,|,|,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,r ,#,CC,CC,CC,CC,CC,#,r ,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,|,|,*,|,*,*,*,*,|,r ,#,#,#,#,#,#,#,#,#
+#,#,#,#,#,#,#,#,#,#,r ,|,P,*,*,P,P,*,P,|,*,|,|,Ds,Ds,Ds,r ,r ,r ,r ,r ,r ,r ,r ,r ,#,CC,CC,CC,CC,CC,#,r ,r ,r ,r ,r ,r ,r ,r ,r ,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,|,*,|,*,*,*,*,*,|,r ,#,#,#,#,#,#,#,#,#
+#,#,#,#,#,#,#,#,#,#,#,r ,|,*,P,P,*,P,P,P,|,*,|,|,Ds,r ,#,#,#,#,#,#,#,#,#,#,CC,CC,CC,CC,CC,#,#,#,#,#,#,#,#,#,#,r ,Ds,Ds,Ds,Ds,Ds,Ds,|,|,*,|,*,|,r ,*,*,|,r ,#,#,#,#,#,#,#,#,#
+#,#,#,#,#,#,#,#,#,#,#,r ,|,P,P,P,P,P,P,P,P,|,*,|,Ds,r ,#,CC,CC,CC,CC,CC,CC,CC,CC,CC,CC,CC,CC,CC,CC,CC,CC,CC,CC,CC,CC,CC,CC,CC,#,#,r ,Ds,Ds,Ds,Ds,Ds,|,*,|,*,|,r ,|,|,r ,|,r ,#,#,#,#,#,#,#,#,#
+#,#,#,#,#,#,#,#,#,#,#,r ,|,P,*,P,P,P,P,P,P,P,|,*,|,r ,#,#,#,#,#,CC,CC,CC,CC,CC,CC,CC,CC,CC,CC,CC,CC,CC,CC,CC,#,#,#,CC,CC,#,r ,Ds,Ds,|,|,|,*,|,*,|,r ,|,|,r ,*,|,r ,#,#,#,#,#,#,#,#,#
+#,#,#,#,#,#,#,#,#,#,#,r ,|,*,P,P,P,P,P,P,P,P,P,|,*,|,r ,#,#,r ,#,CC,CC,CC,CC,CC,CC,CC,CC,CC,CC,CC,CC,CC,CC,CC,#,r ,#,#,#,#,r ,Ds,|,|,*,*,|,*,|,r ,|,|,r ,|,|,r ,#,#,#,#,#,#,#,#,#,#
+#,#,#,#,#,#,#,#,#,#,#,#,r ,|,P,P,P,P,P,#,#,#,#,*,|,*,|,r ,r ,r ,#,CC,CC,CC,CC,CC,CC,CC,CC,CC,CC,CC,CC,CC,CC,CC,#,r ,r ,r ,r ,r ,Ds,|,|,*,|,|,*,|,r ,|,|,r ,|,|,|,r ,#,#,#,#,#,#,#,#,#,#
+#,#,#,#,#,#,#,#,#,#,#,#,r ,|,P,P,P,P,#,#,O,O,#,#,*,|,*,|,r ,r ,#,#,#,#,#,#,CC,CC,CC,CC,CC,#,#,#,#,#,#,r ,Ds,Ds,Ds,Ds,Ds,|,*,|,*,*,*,|,|,|,r ,|,|,r ,|,r ,#,#,#,#,#,#,#,#,#,#
+#,#,#,#,#,#,#,#,#,#,#,#,r ,|,P,P,P,#,O(D),O,O,O,O,#,Ds,*,|,*,|,r ,r ,r ,r ,r ,r ,#,CC,CC,CC,CC,CC,#,r ,r ,r ,r ,r ,r ,Ds,Ds,Ds,|,|,|,*,|,*,Ds,Ds,*,|,r ,|,|,r ,|,|,r ,#,#,#,#,#,#,#,#,#,#
+#,#,#,#,#,#,#,#,#,#,#,#,r ,|,P,P,#,#,O,O,O,O,#,#,Ds,Ds,*,|,*,|,Ds,Ds,Ds,Ds,r ,#,CC,CC,CC,CC,CC,#,r ,Ds,Ds,Ds,Ds,Ds,|,|,|,|,*,*,|,*,*,Ds,Ds,Ds,*,|,|,r ,|,|,r ,#,#,#,#,#,#,#,#,#,#,#
+#,#,#,#,#,#,#,#,#,#,#,#,#,r ,|,#,#,O,O,O,O,#,#,Ds,Ds,Ds,Ds,*,|,*,|,Ds,Ds,Ds,r ,#,#,#,CC(D1),#,#,#,r ,Ds,Ds,Ds,|,|,|,*,*,*,|,|,*,Ds,Ds,Ds,Ds,Ds,r ,*,|,|,|,|,r ,#,#,#,#,#,#,#,#,#,#,#
+#,#,#,#,#,#,#,#,#,#,#,#,#,r ,|,#,O,O,O,O,#,#,Ds,Ds,Ds,Ds,Ds,Ds,*,|,*,|,Ds,Ds,r ,r ,r ,r ,r ,r ,r ,r ,r ,Ds,|,|,|,*,*,|,|,|,*,*,Ds,Ds,Ds,Ds,Ds,r ,Ds,Ds,*,|,|,|,r ,#,#,#,#,#,#,#,#,#,#,#
+#,#,#,#,#,#,#,#,#,#,#,#,#,r ,|,#,O,O,O,#,#,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,*,|,*,|,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,|,|,|,*,*,*,|,*,*,*,Ds,Ds,Ds,Ds,Ds,Ds,r ,Ds,Ds,Ds,Ds,*,|,|,r ,#,#,#,#,#,#,#,#,#,#,#
+#,#,#,#,#,#,#,#,#,#,#,#,#,r ,|,#,#,#,#,#,*,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,*,|,*,|,|,|,|,|,|,|,|,|,|,*,*,*,|,|,*,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,r ,Ds,Ds,Ds,Ds,Ds,Ds,|,r ,#,#,#,#,#,#,#,#,#,#,#,#
+#,#,#,#,#,#,#,#,#,#,#,#,#,#,r ,|,*,*,r ,r ,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,*,|,*,*,*,*,*,*,*,*,*,*,*,*,|,|,*,*,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,r ,Ds,Ds,Ds,Ds,Ds,Ds,|,|,r ,#,#,#,#,#,#,#,#,#,#,#,#
+#,#,#,#,#,#,#,#,#,#,#,#,#,#,r ,|,*,Ds,Ds,Ds,r ,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,*,*,|,|,|,|,|,*,*,*,|,|,|,|,*,*,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,r ,Ds,Ds,Ds,Ds,Ds,Ds,Ds,|,r ,r ,#,#,#,#,#,#,#,#,#,#,#,#
+#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,r ,|,Ds,Ds,Ds,Ds,r ,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,*,*,r ,*,|,*,|,*,r ,*,|,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,r ,Ds,Ds,Ds,Ds,Ds,Ds,Ds,|,|,r ,#,#,#,#,#,#,#,#,#,#,#,#,#
+#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,r ,|,Ds,Ds,Ds,Ds,r ,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,r ,*,|,*,|,*,r ,|,|,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,r ,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,|,r ,#,#,#,#,#,#,#,#,#,#,#,#,#,#
+#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,r ,|,Ds,Ds,Ds,Ds,Ds,r ,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,r ,*,|,|,|,*,r ,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,r ,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,|,r ,#,#,#,#,#,#,#,#,#,#,#,#,#,#
+#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,r ,|,Ds,Ds,Ds,Ds,Ds,Ds,r ,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,r ,*,|,*,|,*,r ,Ds,Ds,Ds,Ds,Ds,Ds,r ,r ,r ,r ,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,|,r ,#,#,#,#,#,#,#,#,#,#,#,#,#,#
+#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,r ,|,Ds,Ds,Ds,Ds,Ds,Ds,Ds,r ,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,r ,*,|,*,|,*,r ,Ds,Ds,Ds,Ds,Ds,r ,Ds,Ds,r ,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,|,r ,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#
+#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,r ,|,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,r ,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,r ,*,|,*,|,*,r ,Ds,Ds,Ds,r ,r ,Ds,Ds,Ds,r ,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,|,|,r ,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#
+#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,r ,|,|,Ds,Ds,Ds,Ds,Ds,Ds,Ds,r ,Ds,Ds,Ds,r ,r ,Ds,Ds,r ,*,|,|,|,*,r ,r ,r ,r ,Ds,Ds,r ,Ds,Ds,r ,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,|,r ,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#
+#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,r ,|,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,r ,r ,r ,Ds,Ds,r ,r ,r ,*,B,*,B,*,r ,r ,r ,r ,Ds,Ds,r ,r ,r ,r ,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,|,|,r ,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#
+#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,r ,|,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,r ,Ds,r ,Ds,Ds,r ,r ,r ,*,|,*,|,*,r ,Ds,Ds,Ds,r ,r ,Ds,Ds,Ds,Ds,r ,Ds,Ds,Ds,Ds,Ds,Ds,Ds,|,r ,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#
+#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,r ,|,Ds,Ds,Ds,Ds,Ds,r ,r ,Ds,Ds,Ds,r ,r ,Ds,Ds,r ,*,|,*,|,*,r ,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,r ,r ,Ds,Ds,Ds,Ds,|,|,r ,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#
+#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,r ,|,Ds,Ds,Ds,r ,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,r ,*,|,|,|,*,r ,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,r ,r ,Ds,Ds,Ds,|,r ,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#
+#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,r ,|,Ds,Ds,r ,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,r ,*,|,*,|,*,r ,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,r ,r ,|,|,r ,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#
+#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,r ,r ,|,r ,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,r ,*,|,*,|,3,r ,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,|,|,r ,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#
+#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,r ,r ,|,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,Ds,*,*,*,*,|,*,|,*,*,*,*,*,*,*,*,*,*,*,*,*,Ds,|,r ,r ,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#
+#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,r ,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,|,r ,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#
+#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,r ,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#
+#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,G1,G1,G1,G1,G1,G1,G1,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,#,vb,#,#,#,#,#,#,#,#,#,#
