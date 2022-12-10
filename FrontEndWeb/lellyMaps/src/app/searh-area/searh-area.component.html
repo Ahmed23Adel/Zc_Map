@@ -1,0 +1,104 @@
+<div id="search_area_ele">
+
+    <div [ngClass]="{'arrow_area_expanded': isExpanded, 'arrow_area_collapsed': !isExpanded}">
+        <img (click)="expand()" src="\assets\left_arrow.png" width="50px" height="auto" id="left-arrow">
+    </div>
+
+    <div  [ngClass]="{'backgroud_area_expanded': isExpanded, 'backgroud_area_collapsed': !isExpanded}">
+        <div class="from_area">
+            <u class="from_txt"> From</u>
+            <!-- <input type="text" class="from_input" > -->
+            <input id="from-input-field" list="nameHistory" type="text" ng-model="user.name" class="from_input" [(ngModel)]="msgSrchAreaFromChild"/>
+            <datalist id="nameHistory">
+              <!-- <option ng-repeat="item of userHistory" value="{{ item }}"></option> -->
+              <option #item value="{{ item }}" *ngFor="let item of userHistory" style="background-color: wheat;">
+                {{ item }}
+              </option>
+            </datalist>
+
+            <a (click)="sendChooseFromToParent()">
+              <img src="\assets\choose1.png" width="40px" height="auto"class="choose1-btn" id="choose-from">
+            </a>
+            
+        </div>
+
+        <div class="to_area">
+            <u class="to_txt"> To  </u>
+            <!-- <input type="text" class="to_input"> -->
+            <input list="nameHistory" type="text" ng-model="user.name" class="to_input" [(ngModel)]="msgSrchAreaToChild" />
+            <datalist id="nameHistory">
+              <!-- <option ng-repeat="item of userHistory" value="{{ item }}"></option> -->
+              <option #item value="{{ item }}" *ngFor="let item of userHistory" style="background-color: wheat;">
+                {{ item }}
+              </option>
+            </datalist>
+            <a (click)="sendChooseToToParent()">
+              <img src="\assets\choose1.png" width="40px" height="auto"  class="choose1-btn" id="choose-to">
+            </a>
+            
+            
+        </div>
+        
+        <details class="custom-select">
+            <summary class="radios">
+              <input type="radio" name="item" id="default" title="A*" checked>
+              <input type="radio" name="item" id="item0" title="A*">
+              <input type="radio" name="item" id="item1" title="UCS">
+              <input type="radio" name="item" id="item2" title="BFS">
+              <input type="radio" name="item" id="item3" title="DFS">
+              <input type="radio" name="item" id="item4" title="IDS">
+              <input type="radio" name="item" id="item5" title="Hill climbing">
+              <input type="radio" name="item" id="item5" title="Simulated annealing">
+            </summary>
+            <ul class="list">
+              <li>
+                <label for="item0">
+                    A*
+                  <span></span>
+                </label>
+              </li>
+              <li>
+                <label for="item1">UCS</label>
+              </li>
+              <li>
+                <label for="item2">BFS</label>
+              </li>
+              <li>
+                <label for="item2">DFS</label>
+              </li>
+              <li>
+                <label for="item3">IDS</label>
+              </li>
+              <li>
+                <label for="item4">Hill climbing</label>
+              </li>
+              <li>
+                <label for="item5">Simulated annealing</label>
+              </li>
+              <!-- <li>
+                <label for="item5"></label>
+              </li> -->
+              <!-- <li>
+                <label for="item5">Simulated annealing</label>
+              </li> -->
+            </ul>
+          </details>
+          <div class="search-btn-area">
+            <div class="submit-area">
+              <div class="btn-div">
+                <button class="btn-search" (click)="SearchSubmit()"> Search</button>
+              </div>
+              <div style="margin: 10px;">
+
+                <label class="show-steps-txt"><input  [(ngModel)]="isChecked" type="checkbox" name="showSteps" value="1" checked class="show-steps-check" id="show-steps"> Show all steps</label>
+              </div>
+              
+            </div>
+            
+          </div>
+          
+          
+
+    </div>
+
+</div>

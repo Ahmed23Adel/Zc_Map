@@ -1,0 +1,19 @@
+
+
+
+body{
+    padding: 0%;
+}
+
+.col-1{
+    width: 1.282% ;
+    float: left;
+    cursor: pointer;
+    // height: 10px;
+    // padding: 10px;
+}
+
+.row::after{
+    content: " ";
+    clear: both;
+}

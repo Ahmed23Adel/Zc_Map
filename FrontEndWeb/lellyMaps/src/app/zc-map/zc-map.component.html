@@ -1,0 +1,43 @@
+<!-- <p>zc-map works!</p> -->
+<!-- {'', 'N', 'vb', 'CC', 'H', 'D', 'S', 'P', 'Ds', '|', 'G2', 'B', '*', 'C', 'AC', '#', 'G4', 'G3', 'Ca', 'A', 'e', 'w', 'r ', 'G1', '3', 'O'} -->
+<div *ngFor="let row of zc_map; let indxRow=index" class="row">
+    <span *ngFor="let cell of row; let indxCol=index">
+       <!-- <aside class="col-1"> {{cell}}</aside> -->
+       <span [ngSwitch]="cell" >
+        <a (click)="this.select(indxRow, indxCol)">
+            <img *ngSwitchCase="''" src="\assets\sidewalk.png" class="col-1" id="{{'cell-'+indxRow+'-'+indxCol}}">
+            <img *ngSwitchCase="'vb'" src="\assets\sidewalk.png" class="col-1"  id="{{'cell-'+indxRow+'-'+indxCol}}">
+            <img *ngSwitchCase="'N'" src="\assets\nano.png" class="col-1" id="{{'cell-'+indxRow+'-'+indxCol}}">
+            <img *ngSwitchCase="'CC'" src="\assets\culture.png" class="col-1" id="{{'cell-'+indxRow+'-'+indxCol}}" >
+            <img *ngSwitchCase="'H'" src="\assets\bms.png" class="col-1" id="{{'cell-'+indxRow+'-'+indxCol}}">
+            <img *ngSwitchCase="'D'" src="\assets\dorms.png" class="col-1" id="{{'cell-'+indxRow+'-'+indxCol}}">
+            <img *ngSwitchCase="'S'" src="\assets\service.png" class="col-1" id="{{'cell-'+indxRow+'-'+indxCol}}">
+            <img *ngSwitchCase="'P'" src="\assets\parking.png" class="col-1" id="{{'cell-'+indxRow+'-'+indxCol}}">
+            <img *ngSwitchCase="'Ds'" src="\assets\desert.png" class="col-1" id="{{'cell-'+indxRow+'-'+indxCol}}">
+            <img *ngSwitchCase="'|'" src="\assets\road.png" class="col-1" id="{{'cell-'+indxRow+'-'+indxCol}}">
+            <img *ngSwitchCase="'G1'" src="\assets\gate.png" class="col-1" id="{{'cell-'+indxRow+'-'+indxCol}}">
+            <img *ngSwitchCase="'G2'" src="\assets\gate.png" class="col-1" id="{{'cell-'+indxRow+'-'+indxCol}}">
+            <img *ngSwitchCase="'G3'" src="\assets\gate.png" class="col-1" id="{{'cell-'+indxRow+'-'+indxCol}}">
+            <img *ngSwitchCase="'G4'" src="\assets\gate.png" class="col-1" id="{{'cell-'+indxRow+'-'+indxCol}}">
+            <img *ngSwitchCase="'B'" src="\assets\bump.png" class="col-1" id="{{'cell-'+indxRow+'-'+indxCol}}">
+            <img *ngSwitchCase="'*'" src="\assets\tree.png" class="col-1" id="{{'cell-'+indxRow+'-'+indxCol}}">
+            <img *ngSwitchCase="'C'" src="\assets\culture.png" class="col-1" id="{{'cell-'+indxRow+'-'+indxCol}}">
+            <img *ngSwitchCase="'AC'" src="\assets\academic3.png" class="col-1" id="{{'cell-'+indxRow+'-'+indxCol}}">
+            <img *ngSwitchCase="'#'" src="\assets\wall.png" class="col-1" id="{{'cell-'+indxRow+'-'+indxCol}}">
+            <img *ngSwitchCase="'Ca'" src="\assets\cafeteria3.png" class="col-1" id="{{'cell-'+indxRow+'-'+indxCol}}">
+            <img *ngSwitchCase="'A'" src="\assets\service.png" class="col-1" id="{{'cell--'+indxRow+'-'+indxCol}}">
+            <img *ngSwitchCase="'e'" src="\assets\workshop.png" class="col-1" id="{{'cell-'+indxRow+'-'+indxCol}}">
+            <img *ngSwitchCase="'w'" src="\assets\workshop.png" class="col-1" id="{{'cell-'+indxRow+'-'+indxCol}}">
+            <img *ngSwitchCase="'r'" src="\assets\sidewalk.png" class="col-1" id="{{'cell--'+indxRow+'-'+indxCol}}">
+            <img *ngSwitchCase="'3'" src="\assets\bike-lane.png" class="col-1" id="{{'cell-'+indxRow+'-'+indxCol}}">
+            <img *ngSwitchCase="'O'" src="\assets\one-stop.png" class="col-1" id="{{'cell-'+indxRow+'-'+indxCol}}">
+            <img *NgSwitchDefault src="\assets\error.png" class="col-1" id="{{'cell-'+indxRow+'-'+indxCol}}">
+        </a>
+        
+        
+        
+       </span>
+    </span>
+    
+
+</div>

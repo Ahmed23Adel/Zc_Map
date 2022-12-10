@@ -1,0 +1,24 @@
+
+<div id="container">
+
+    <div id="serach_area">
+        <!-- <app-searh-area (selectFromChild) = "signalFromSearchArea=$event"></app-searh-area> -->
+        <app-searh-area (selectFromChild) = "catchFrom()" (selectToChild) = "catchTo()" [msgSrchAreaFromChild]="msgSearchAreaFrom" [msgSrchAreaToChild]="msgSearchAreaTo" ></app-searh-area>
+        {{signalFromSearchArea}}
+    </div>
+
+    <app-zc-map [msgZcMapFromChild]="msgZcMapFrom" [msgZcMapToChild]="msgZcMapTo"  (valueFrom) = "userSelectedFrom($event)" (valueTo) = "userSelectedTo($event)" ></app-zc-map>
+    <div id="lilly-txt-area">
+        <div id="lilly-txt-area-sub">
+            <img src="\assets\speech-bubble.png" id="lilly_txt_bubble" width="180px" height="140px">
+            <h2  id="lilly_txt"> Let me do the</h2>
+            <h2  id="lilly_txt_2"> search for you</h2>
+        </div>
+        
+    </div>
+    
+    <img src="\assets\lilly_icon.png" id="lilly-icon" width="200px" height="200px">
+</div>
+
+
+<router-outlet></router-outlet>
