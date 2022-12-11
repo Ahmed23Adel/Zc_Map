@@ -93,29 +93,19 @@ def get_index_from_txt(txt):
 
 
 from _datetime import datetime
-#
-# if __name__ == "__main__":
-#     start_time = datetime.now()
-#     zc_map = get_map()
-#     print(get_index_from_txt("Helmy".lower()))
-#     problem = ZcMap(80, get_index_from_txt("h".lower()),zc_map)
-#     sol = a_star(problem)
-#     end_time = datetime.now()
-#     print("Time ",end_time - start_time)
-#     print(sol)
 
-def get_from_to_from_x(type1, type2, x1, y1, x2, y2):
+def get_from_to_from_x(type1, type2, row1, col1, row2, col2):
  ROW_COUNT, COLS_COUNT = 81, 78
  from_pos = 0
  to_pos = 0
  if type1 == 'cord':
-  from_pos = x1 * COLS_COUNT + y1 * ROW_COUNT
- if type1 == 'pos':  # just look on x1
-  from_pos = mapper[x1]
+  from_pos = col1 + row1*COLS_COUNT
+ if type1 == 'pos': # just look on x1
+   from_pos = mapper[row1]
  if type2 == 'cord':
-  to_pos = [x2 * COLS_COUNT + y2 * ROW_COUNT]
- if type2 == 'pos':  # just look on x1
-  to_pos = mapper[x2]
+  to_pos = [col2 + row2*COLS_COUNT]
+ if type2 == 'pos': # just look on x1
+   to_pos = mapper[row2]
  return from_pos, to_pos
 
 
@@ -135,15 +125,14 @@ def get_alg(alg, problem):
  if alg == 'astar':
   return a_star(problem)
 
-
-# def run(alg, type1, type2, x1, y1, x2, y2):
-alg, type1, type2, x1, y1, x2, y2 = 'astar', 'cord','cord',2,3,5,6
-zc_map = get_map()
-start_time = datetime.now()
-print(get_from_to_from_x(type1, type2, x1, y1, x2, y2))
-problem = ZcMap(*get_from_to_from_x(type1, type2, x1, y1, x2, y2), zc_map)
-sol = get_alg(alg, problem)
-end_time = datetime.now()
-output = sol[0]
-print("Time ", end_time - start_time)
-print(output)
+def run(alg, type1, type2, row1, col1, row2, col2):
+    zc_map = get_map()
+    start_time = datetime.now()
+    problem = ZcMap(*get_from_to_from_x(type1, type2, row1, col1, row2, col2), zc_map)
+    sol = get_alg(alg,problem)
+    end_time = datetime.now()
+    print("sol",(sol))
+    # output = sol[0]
+    print("Time ",end_time - start_time)
+    # print(output)
+    return {}

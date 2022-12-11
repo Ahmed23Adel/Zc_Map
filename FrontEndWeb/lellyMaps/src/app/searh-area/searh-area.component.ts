@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Observable, Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-searh-area',
@@ -13,6 +14,13 @@ export class SearhAreaComponent {
   @Input() msgSrchAreaFromChild:any = "xxx";
   @Input() msgSrchAreaToChild:any = "yyy";
 
+  @Output() FinalFromChild = new EventEmitter()
+  @Output() FinalToChild = new EventEmitter()
+  @Output() FinalCheckedChild = new EventEmitter()
+  @Output() FinalSignal = new EventEmitter()
+  @Output() FinalAlgoChild = new EventEmitter()
+
+  final_alg:string = ""
 
   filp:boolean = true;
 
@@ -27,54 +35,81 @@ export class SearhAreaComponent {
       'AC(F)', 'AC(F)', 'AC(F)', 'AC(G15)', 'AC(G15)', 'AC(F)', 'AC(F)', 'AC(F)', 'AC(Locker)', 'AC(Locker)', 
       'AC(Locker)', 'AC(Locker)', 'AC(Locker)', 'H(D2)', 'N(D1)', 'H(D1)', 'H(D3)', 'O(D)', 'CC(D1)','ac', 'w', 
       'e', 'd','o','cc','s','n','h','helmy','nano','nano','culture complex','one stop','onestop','dorms','engineering','workshop','academic'];
+
+  
+
   expand(){
     this.isExpanded = !this.isExpanded;
+    
+  }
+  
+  setAlg(){
+    const astar_ = document.getElementById("item0")as HTMLInputElement;
+    const astar = astar_.checked;
+
     const ucs_ = document.getElementById("item1")as HTMLInputElement;
     const ucs = ucs_.checked;
 
-    console.log(this.msgSrchAreaFromChild)
-    console.log(this.msgSrchAreaToChild)
+    const greedy_ = document.getElementById("item2")as HTMLInputElement;
+    const greedy = greedy_.checked;
+    
+    const bfs_ = document.getElementById("item3")as HTMLInputElement;
+    const bfs = bfs_.checked;
+
+    const dfs_ = document.getElementById("item4")as HTMLInputElement;
+    const dfs = dfs_.checked;
+
+    const ids_ = document.getElementById("item5")as HTMLInputElement;
+    const ids = ids_.checked;
+
+    const dls_ = document.getElementById("item6")as HTMLInputElement;
+    const dls = dls_.checked;
+
+    const hill_climging_ = document.getElementById("item7")as HTMLInputElement;
+    const hill_climging = hill_climging_.checked;
+
+    const simulate_ann_ = document.getElementById("item8")as HTMLInputElement;
+    const simulate_ann = simulate_ann_.checked;
+    console.log("What is checked?")
+    console.log(bfs, dfs,dls,ids,greedy,ucs,astar)
+    if (bfs)
+       this.final_alg = "bfs"
+    if (dfs)
+       this.final_alg = "dfs"
+    if (dls)
+       this.final_alg = "dls"
+    if (ids)
+       this.final_alg = "ids"
+    if (greedy)
+       this.final_alg = "greedy"
+    if (ucs)
+       this.final_alg = "ucs"
+    if (astar)
+       this.final_alg = "astar"
   }
-   
 
   sendChooseFromToParent(){
     console.log("Send from")
     const  chooseFromEle= window.document.getElementById("choose-from")!
     this.selectFromChild.emit("from")
-    // if(this.filp){
-    //   chooseFromEle.style.borderBlockStyle = "dotted";
-    //   chooseFromEle.style.borderWidth = "5px";
-    //   this.filp = !this.filp;
-    // }else{
-    //   chooseFromEle.style.borderBlockStyle = "solid";
-    //   chooseFromEle.style.borderWidth = "1px";
-    //   this.filp = !this.filp;
-    // }
     
   }
   sendChooseToToParent(){
     console.log("SearchArea: Send to")
     this.selectToChild.emit("to")
-    // const  chooseFromEle= window.document.getElementById("choose-to")!
-    // if(this.filp){
-    //   chooseFromEle.style.borderBlockStyle = "dotted";
-    //   chooseFromEle.style.borderWidth = "5px";
-    //   this.filp = !this.filp;
-    // }else{
-    //   chooseFromEle.style.borderBlockStyle = "solid";
-    //   chooseFromEle.style.borderWidth = "1px";
-    //   this.filp = !this.filp;
-    // }
   }
   
-  // checkCheckBoxvalue(event:any){
-  //   this.isShowSteps = event.checked;
-  // }
 
   SearchSubmit(){
+    this.setAlg();
     console.log(this.msgSrchAreaFromChild);
     console.log(this.msgSrchAreaToChild);
     console.log(this.isChecked);
+    this.FinalFromChild.emit(this.msgSrchAreaFromChild);
+    this.FinalToChild.emit(this.msgSrchAreaToChild);
+    this.FinalCheckedChild.emit(this.isChecked);
+    this.FinalAlgoChild.emit(this.final_alg);
+    this.FinalSignal.emit();
 
   }
 }

@@ -3,11 +3,11 @@
 
     <div id="serach_area">
         <!-- <app-searh-area (selectFromChild) = "signalFromSearchArea=$event"></app-searh-area> -->
-        <app-searh-area (selectFromChild) = "catchFrom()" (selectToChild) = "catchTo()" [msgSrchAreaFromChild]="msgSearchAreaFrom" [msgSrchAreaToChild]="msgSearchAreaTo" ></app-searh-area>
+        <app-searh-area (selectFromChild) = "catchFrom()" (selectToChild) = "catchTo()" [msgSrchAreaFromChild]="msgSearchAreaFrom" [msgSrchAreaToChild]="msgSearchAreaTo"  (FinalCheckedChild)="FinalCheckedParent=$event" (FinalFromChild)="FinalFromParent=$event"  (FinalToChild)="FinalToParent=$event" (FinalAlgoChild)="FinalAloParent=$event"  (FinalSignal)="SearchApi()"></app-searh-area>
         {{signalFromSearchArea}}
     </div>
-
-    <app-zc-map [msgZcMapFromChild]="msgZcMapFrom" [msgZcMapToChild]="msgZcMapTo"  (valueFrom) = "userSelectedFrom($event)" (valueTo) = "userSelectedTo($event)" ></app-zc-map>
+    <!-- [FinalFromParentZcMap] ="FinalFromParent" [FinalToParentZcMap] ="FinalToChild" [FinalAlgoParentZcMap] ="FinalAlgoChild" [FinalCheckedParentZcMap] ="FinalChecked" [clickSubject]="clickSubject" -->
+    <app-zc-map [msgZcMapFromChild]="msgZcMapFrom" [msgZcMapToChild]="msgZcMapTo"  (valueFrom) = "userSelectedFrom($event)" (valueTo) = "userSelectedTo($event)" [FinalFromParentZcMap] ="FinalFromToZcMap" [FinalToParentZcMap] ="FinalToToZcMap" [FinalAlgoParentZcMap] ="FinalAlgToZcMap" [FinalCheckedParentZcMap] ="FinalCheckedToZcMap"  [events]="eventsSubject.asObservable()"></app-zc-map>
     <div id="lilly-txt-area">
         <div id="lilly-txt-area-sub">
             <img src="\assets\speech-bubble.png" id="lilly_txt_bubble" width="180px" height="140px">
