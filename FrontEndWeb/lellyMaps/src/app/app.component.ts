@@ -130,6 +130,10 @@ export class AppComponent {
     this.FinalAlgToZcMap = this.FinalAloParent;
     this.FinalCheckedToZcMap = this.FinalCheckedParent;
     //// by setting  next; it send   signal to zc-map to call API
+    console.log("notiry",this.FinalFromToZcMap)
+    console.log("notiry",this.FinalToToZcMap)
+    console.log("notiry",this.FinalAlgToZcMap)
+    console.log("notiry",this.FinalCheckedToZcMap)
     this.eventsSubject.next();
   }
 }

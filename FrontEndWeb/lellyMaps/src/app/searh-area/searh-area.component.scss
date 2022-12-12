@@ -78,11 +78,14 @@
     // margin-left: 60px;
     // margin-top: 120px;
     font-size: 30px;
+    width: 20%;
 }
 
 .from_area{
     margin-top: 40px;
-    margin-left: 50px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
 }
 
 .from_input{
@@ -91,6 +94,12 @@
     border-color: black;
     border-style: solid;
     margin: 10px;
+    width: 60%;
+}
+
+.pick-cell{
+  width: 20%;
+  margin-right: 10px;
 }
 
 
@@ -100,11 +109,14 @@
     // margin-left: 60px;
     // margin-top: 120px;
     font-size: 30px;
+    width: 20%;
 }
 
 .to_area{
     margin-top: 40px;
     margin-left: 50px;
+    display: flex;
+    flex-direction: row;
 }
 
 .to_input{
@@ -113,6 +125,7 @@
     border-color: black;
     border-style: solid;
     margin: 10px;
+    width: 60%;
 }
 
 details {
