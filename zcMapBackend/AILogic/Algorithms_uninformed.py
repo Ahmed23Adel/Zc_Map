@@ -98,7 +98,7 @@ def dls_tree(problem, limit,verbose=False):
             frontier.append(child)
     return None
 
-def dls_graph(problem, limit, verbose=False):
+def dls_graph(problem, limit = 8, verbose=False):
     counter=0
     cond=True
     '''Depth-First graph search implementation.'''
@@ -180,7 +180,7 @@ def ids_tree(problem, limit, verbose=False):
             cond = False
 
 
-def ids_graph(problem, limit, verbose=False):
+def ids_graph(problem, limit = 8, verbose=False):
     cond = True
     new_limit = limit
     ret = None
@@ -188,7 +188,7 @@ def ids_graph(problem, limit, verbose=False):
         if (ret == None):
             ret = dls_graph(problem, new_limit, verbose=True)
             new_limit += 1
-            print("new limit is", new_limit)
+            # print("new limit is", new_limit)
         else:
-            print("Path=", ret[0], "cost=", ret[1])
+            # print("Path=", ret[0], "cost=", ret[1])
             cond = False
