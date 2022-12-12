@@ -9,12 +9,29 @@ import { Subject } from 'rxjs';
 })
 export class AppComponent {
 
-  msgZcMapFrom = "-1"//if +1 don't catch mouse, if -1 catch it
-  msgZcMapTo = "-1"//if +1 don't catch mouse, if -1 catch it
+  ////////////////////////////////////
+  ///////Send signal from App component to Zc map
+  /////// If equal to +1, then it will catch a click otherwise it will not
+  ////////it will send this signal based on signal coming from search area
+  signalCatchFromMain = "-1"//if +1 don't catch mouse, if -1 catch it
+  signalCatchToMain = "-1"//if +1 don't catch mouse, if -1 catch it
+  ////////////////////////////////////
+
+  ////////////////////////////////////
+  ///////value of  x, y that user selected. to be sent to search area.
+  ////// it t should  have been set by zc map
   msgSearchAreaFrom = ""
   msgSearchAreaTo = ""
+  //////////////////////////////////
+  /////////////////////////////////
+  ///// tmp var I   store msgSearchAreaFrom, and msgSearchAreaTo before sending  them to 
+  ///// search area 
   valueFromParent = "0,0";
   valueToParent = "0,0";
+  /////////////////////////////////
+  ////// send  final signal to zc-map to search to call API
+  eventsSubject: Subject<void> = new Subject<void>();
+  ////////////////////////////////////////
 
   FinalFrom = ""
   FinalTo = ""
@@ -24,82 +41,95 @@ export class AppComponent {
   title = 'lellyMaps';
   signalFromSearchArea = ""
 
+  ///////////////////////////////////////
+  ////// some variables to hold from, to, checked, algorithm
+  ///////// it should be set by emiiter in   search area
   FinalFromParent = ""
   FinalToParent = ""
   FinalCheckedParent = ""
   FinalAloParent = ""
-
+  ///////////////////////////////////////
+  /////////////////////////////////////
+  /////  These are   the variables that are being  read by
+  ///// the zc-map that should be set  while calling an API
   FinalFromToZcMap: any;
   FinalToToZcMap: any;
   FinalAlgToZcMap: any;
   FinalCheckedToZcMap: any;
 
   constructor(private solServiceData:SolutionBackedService){}
-  // _url = "http://127.0.0.1:8000/?alg=astar&col1=5&col2=20&format=json&row1=1&row2=1&type1=cord&type2=cord"
-  // constructor(private _http:HTTPClient){}
 
   catchFrom(){
-    console.log("Ahmexcd")
-    this.msgZcMapFrom = "+1"
+    /*
+    This func is fired by search area component, 
+    when it does, it sets the value of signalCatchFrom to +1
+    for the zc map, to catch any  click and set it to 'from'
+  */
+    this.signalCatchFromMain = "+1"
   }
-
+  
   catchTo(){
-    console.log("catchTo")
-    this.msgZcMapTo = "+1"
+    /*
+    This func is fired by search area component, 
+    when it does, it sets the value of signalCatchTo to +1
+    for the zc map, to catch any  click and set it to 'from'
+  */
+    this.signalCatchToMain = "+1"
   }
 
   userSelectedFrom(ev:any){
+    /*
+      This signal is fired  from zc map, it shall tell you  that zc map
+      should no longer accept any click from user, as it  has already gotten  
+      the response.
+      Most importantly, it  sends this data to search area to show  it in the box,
+      by setting 'msgSearchAreaFrom' to the chosen x,  y.
+      ev: value of x, y  that user selected
+    */
     this.valueFromParent = ev;
-    console.log("User Selected From", this.valueFromParent);
-    console.log("User Selected To", this.valueToParent)
-    this.msgZcMapTo = "-1";
-    this.msgZcMapFrom = "-1";
-    this.msgSearchAreaFrom = this.valueFromParent;
+    this.signalCatchToMain = "-1"; // prevent zc map to cath any more clicks
+    this.signalCatchFromMain = "-1"; // prevent zc map to cath any more clicks
+    this.msgSearchAreaFrom = this.valueFromParent; // send data  to serachArea
   }
 
   userSelectedTo(ev:any){
+    /*
+      This signal is fired  from zc map, it shall tell you  that zc map
+      should no longer accept any click from user, as it  has already gotten  
+      the response.
+      Most importantly, it  sends this data to search area to show  it in the box,
+      by setting 'msgSearchAreaFrom' to the chosen x,  y.
+      ev: value of x, y  that user selected
+    */
     this.valueToParent = ev;
-    console.log("User Selected From", this.valueFromParent);
-    console.log("User Selected To", this.valueToParent)
-    this.msgZcMapTo = "-1";
-    this.msgZcMapFrom = "-1";
+    this.signalCatchFromMain= "-1";
+    this.signalCatchToMain = "-1";
     this.msgSearchAreaTo = this.valueToParent;
     
   }
 
   SearchApi(){
-    
-    // console.log("Search", this.FinalCheckedParent)
-    // console.log("Search", this.FinalFromParent)
-    // console.log("Search", this.FinalToParent)
-    // console.log("Search", this.FinalAloParent)
+    /*
+      It's fired   signal when user clicks   on search button
+      fired by emitter  in   serach area called 'FinalSignal'
+      it  just calls notify click  to send this final signal  to  zc-map 
+      to call  the api from there.
+    */
     this.notifyClick();
-  //   this.solServiceData.getSolution(this.FinalFromParent, this.FinalToParent,this.FinalAloParent ).subscribe(
-  //     serviceData=>{
-
-  //       for(let i=0; i<serviceData.alg_output.length; i++){
-  //         let current_id = serviceData.alg_output[i];
-  //         let current_ele = document.getElementById(current_id)!
-  //         console.log(current_ele)
-  //       }
-  //     }
-  //   )
   }
 
-  eventsSubject: Subject<void> = new Subject<void>();
+  
 
   notifyClick() {
-    console.log("notifyClick")
-
+    /*
+      It set varialbe that  is   being read by zc-map
+      to send  them  as varialbles  when callin the API
+    */
     this.FinalFromToZcMap =this.FinalFromParent ;
     this.FinalToToZcMap = this.FinalToParent;
     this.FinalAlgToZcMap = this.FinalAloParent;
     this.FinalCheckedToZcMap = this.FinalCheckedParent;
-
-    console.log("Search", this.FinalFromToZcMap)
-    console.log("Search", this.FinalToToZcMap)
-    console.log("Search", this.FinalAlgToZcMap)
-    console.log("Search", this.FinalCheckedToZcMap)
+    //// by setting  next; it send   signal to zc-map to call API
     this.eventsSubject.next();
   }
 }

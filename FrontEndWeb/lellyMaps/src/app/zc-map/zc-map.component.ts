@@ -96,7 +96,7 @@ export class ZcMapComponent {
           // border-color: greenyellow;
           // border-style: solid;
           // console.log(current_id, crnt_cell)
-          console.log(current_id, crnt_cell)
+          // console.log(current_id, crnt_cell)
           crnt_cell.style.borderRadius = "50px";
           crnt_cell.style.borderWidth = "5px";
           crnt_cell.style.borderColor = "blue";
