@@ -180,7 +180,7 @@ def ids_tree(problem, limit, verbose=False):
             cond = False
 
 
-def ids_graph(problem, limit = 8, verbose=False):
+def ids_graph_old(problem, limit = 8, verbose=False):
     cond = True
     new_limit = limit
     ret = None
@@ -188,7 +188,29 @@ def ids_graph(problem, limit = 8, verbose=False):
         if (ret == None):
             ret = dls_graph(problem, new_limit, verbose=True)
             new_limit += 1
-            # print("new limit is", new_limit)
+            print("new limit is", new_limit)
         else:
-            # print("Path=", ret[0], "cost=", ret[1])
+            print("Path=", ret[0], "cost=", ret[1])
             cond = False
+
+
+def ids_graph(problem, max_depth = 8):
+    '''Breadth-first graph search implementation.'''
+    if problem.goal_test(problem.init_state): return solution(Node.root(problem.init_state))
+    frontier = deque([Node.root(problem.init_state)])
+    explored = {problem.init_state}
+    while frontier:
+        node = frontier.pop()
+        # if node depth is equal to max depth don't explore it
+        # print("depth at ",len(solution(node)[0]))
+        if len(solution(node)[0]) == max_depth:  continue;
+        for action in problem.actions(node.state):
+            child = Node.child(problem, node, action)
+            if child.state not in explored:
+                if problem.goal_test(child.state):
+                    return solution(child)
+                frontier.append(child)
+                explored.add(child.state)
+
+    new_max_depth = max_depth + 1 
+    return ids_graph(problem, max_depth = new_max_depth )

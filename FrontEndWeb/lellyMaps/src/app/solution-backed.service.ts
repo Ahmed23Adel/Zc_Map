@@ -51,7 +51,7 @@ export class SolutionBackedService {
       type2 = "pos"
       console.log("u1","row2, col2",type2, row2, col2);
     }
-
+    console.log("u1122", alg);
 
     let queryParams = new HttpParams();
     queryParams = queryParams.append("row1",row1);

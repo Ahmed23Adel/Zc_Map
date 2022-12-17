@@ -4,7 +4,7 @@ import math
 
 def get_map():
 
-    data = np.array(list(csv.reader(open(r"D:\Zewail\Year 4\AI\Project\zc_map.csv"))))
+    data = np.array(list(csv.reader(open(r"D:\Zewail\Year 4\AI\Project\Zc_Map\final_zc_map.csv"))))
     data = data.ravel()
     return data
 

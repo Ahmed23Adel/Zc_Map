@@ -32,14 +32,14 @@ export class SearhAreaComponent {
   isChecked:boolean = true;
   //// to see if they should collapse the serch area
   isExpanded = true;
-  userHistory:string[] = [ 'D(D2)', 'w(D)', 'D(D1)', 'e(D)', 'S(D)', 'AC(D)', 'AC(G20)', 'AC(G19)', 'AC(G18)',
-      'AC(G12)', 'AC(Zone B)', 'AC(G11)', 'AC(Zone B)', 'AC(G10)', 'AC(Zone B)', 'AC(G9)', 'AC(Zone B)', 'A',
-    'C(G8)', 'AC(Toilets)', 'AC(G6, security room)', 'AC(G11)', 'AC(Zone B)', 'AC(G7)', 'AC(D)', 'AC(ATM)',
-      'AC(Security room)', 'AC(G12)', 'AC(Zone B)', 'AC(G6)', 'AC(D1)', 'AC(G1)', 'AC(F)', 'AC(F)', 'AC(F)', 
-      'AC(G13)', 'AC(Zone B)', 'AC(G5)', 'AC(cats office)', 'AC(F)', 'AC(F)', 'AC(F)', 'AC(G14)', 'AC(G14)', 
-      'AC(F)', 'AC(F)', 'AC(F)', 'AC(G15)', 'AC(G15)', 'AC(F)', 'AC(F)', 'AC(F)', 'AC(Locker)', 'AC(Locker)', 
-      'AC(Locker)', 'AC(Locker)', 'AC(Locker)', 'H(D2)', 'N(D1)', 'H(D1)', 'H(D3)', 'O(D)', 'CC(D1)','ac', 'w', 
-      'e', 'd','o','cc','s','n','h','helmy','nano','nano','culture complex','one stop','onestop','dorms','engineering','workshop','academic'];
+  userHistory:string[] = ['D(D2)', 'w(D)', 'D(D1)', 'e(D)', 'S(D)', 'AC(D)', 'AC(G20)', 'AC(G19)', 'AC(G18)', 
+                  'AC(G12)', 'AC(Zone B)', 'AC(G11)', 'AC(G10)', 'AC(G9)', 'AC(G8)', 'AC(Toilets)', 'AC(G6, security room)', 
+                  'AC(G7)', 'AC(ATM)', 'AC(Security room)', 'AC(G6)', 'AC(D1)', 'AC(G1)', 'AC(F)', 'AC(G13)', 'AC(G5)', 
+                  'AC(cats office)', 'AC(G14)', 'AC(G15)', 'AC(Locker)', 'N(elevator)', 'H(D2)', 'H(Toilet)', 'N(D1)', 'H(Mosque)',
+                  'H(class4)', 'H(class3)', 'N(Toilet)', 'H(Biology lab)', 'H(class2)', 'H(class1)', 'H(D1)', 'N(G004)', 
+                  'N(Meeting room)', 'H(stairs)', 'N(Microscope)', 'N(G021)', 'N(G022)', 'H(elevator)', 'H(chemistry lab)', 
+                  'N(G018)', 'H(office)', 'N(communication)', 'H(D3)', 'O(D)', 'CC(D1)','helmy', 'nano', 'service',
+                   'culture complex', 'one stop', 'onestop', 'dorms', 'engineering', 'workshop', 'academic'];
 
   
 
@@ -81,6 +81,7 @@ export class SearhAreaComponent {
 
     const simulate_ann_ = document.getElementById("item8")as HTMLInputElement;
     const simulate_ann = simulate_ann_.checked;
+    
     console.log("What is checked?")
     console.log(bfs, dfs,dls,ids,greedy,ucs,astar)
     this.final_alg = "astar"
@@ -98,6 +99,11 @@ export class SearhAreaComponent {
        this.final_alg = "ucs"
     if (astar)
        this.final_alg = "astar"
+    if (hill_climging)
+       this.final_alg = "hillclimbing"
+    if (simulate_ann)
+       this.final_alg = "simulatedannealing"
+
 
   }
 
@@ -112,6 +118,7 @@ export class SearhAreaComponent {
 
   SearchSubmit(){
     this.setAlg();
+    console.log("this.final_alg",this.final_alg)
     this.FinalFromChild.emit(this.msgSrchAreaFromChild);
     this.FinalToChild.emit(this.msgSrchAreaToChild);
     this.FinalCheckedChild.emit(this.isChecked);

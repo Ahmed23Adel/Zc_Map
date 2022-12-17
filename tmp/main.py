@@ -134,16 +134,22 @@ def get_alg(alg, problem):
   return ucs(problem)
  if alg == 'astar':
   return a_star(problem)
+ if alg == 'hillclimbing':
+  return hill_climbing(problem)
+
+
 
 
 # def run(alg, type1, type2, x1, y1, x2, y2):
-alg, type1, type2, x1, y1, x2, y2 = 'astar', 'cord','cord',2,3,5,6
+alg, type1, type2, x1, y1, x2, y2 = 'hillclimbing', 'cord','cord',2,3,5,6
 zc_map = get_map()
-start_time = datetime.now()
-print(get_from_to_from_x(type1, type2, x1, y1, x2, y2))
-problem = ZcMap(*get_from_to_from_x(type1, type2, x1, y1, x2, y2), zc_map)
-sol = get_alg(alg, problem)
+# start_time = datetime.now()
+# print(get_from_to_from_x(type1, type2, x1, y1, x2, y2))
+# print(zc_map[400],zc_map[400-1],zc_map[400-3], zc_map[400-4], zc_map[400-5], zc_map[400-6])
+problem = ZcMap(89, [400], zc_map)
+sol =  simulated_annealing(problem,  lambda t: exp(-t))
+
 end_time = datetime.now()
-output = sol[0]
-print("Time ", end_time - start_time)
-print(output)
+# output = sol[0]
+# print("Time ", end_time - start_time)
+print(sol)
