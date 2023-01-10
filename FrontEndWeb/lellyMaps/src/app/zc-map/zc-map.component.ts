@@ -27,6 +27,7 @@ export class ZcMapComponent {
   @Input() FinalAlgoParentZcMap: any;
   @Input() FinalCheckedParentZcMap: any;
   @Input('clickSubject') clickSubject:any; // signal to fire API
+  @Input() TypeOfSignalZcMap: any;
   /////////////////////////////
 
   /////////////////////////////
@@ -34,7 +35,10 @@ export class ZcMapComponent {
   private eventsSubscription: Subscription;
   @Input() events: Observable<void>;
   /////////////////////////////
-
+  ////////////////////////////
+  //////To show output of RL
+  //////////////////////
+  private eventShowRL: Subscription;
 
   zc_map: string[] []; // zc map to display as images
   isSelectFrom = false;
@@ -56,7 +60,9 @@ export class ZcMapComponent {
      * subscirbe to the event; to call API when parent sends such signal
      * this signal will be based on clicking on search button in search aread
      */
-    this.eventsSubscription = this.events.subscribe(() => this.SearchApi());
+    this.eventsSubscription = this.events.subscribe(() => this.navigateApi());
+    // this.eventShowRL = this.events.subscribe(() => this.showRlAPI());
+    
   }
   
   ngOnDestroy() {
@@ -64,6 +70,7 @@ export class ZcMapComponent {
      * unsubscribe from even
      */
     this.eventsSubscription.unsubscribe();
+    this.eventShowRL.unsubscribe();
   }
 
 
@@ -81,6 +88,15 @@ export class ZcMapComponent {
     if(this.signalZcMapToChild == "+1"){
       this.valueTo.emit(indexRow+","+indexCol);
     }
+  }
+
+  navigateApi(){
+    console.log("navigateApi")
+    if (this.TypeOfSignalZcMap =="search"){
+      return this.SearchApi()
+    }
+    else 
+    return this.showRlAPI();
   }
 
   SearchApi(){
@@ -120,5 +136,54 @@ export class ZcMapComponent {
       }
     )
   }
+
+  showRlAPI(){
+    console.log("showRlAPI")
+    let ignore = true;
+    let prev_id = "";
+    this.solServiceData.getRL().subscribe(
+      serviceData=>{
+        console.log("RL data");
+        console.log(serviceData.states)
+        for(let i=0; i<serviceData.states.length; i++){
+          // draw blue circle on each cell chosen
+          
+          let current_id = serviceData.states[i]; // here you have that id
+          // let crnt_cell = document.getElementById(current_id)as HTMLInputElement;
+          // crnt_cell.style.borderRadius = "50px";
+          // crnt_cell.style.borderWidth = "5px";
+          // crnt_cell.style.borderColor = "blue";
+          // crnt_cell.style.borderStyle = "solid";
+          this.taskColorId(current_id, prev_id, ignore);
+          prev_id =current_id; 
+          ignore = false;
+          
+        }
+      }
+    )
+
+  }
+
+
+   
+ taskColorId(current_id:any, prev_id:any, ignore:boolean) {
+   setTimeout(function() {
+       // Add tasks to do
+       if (!ignore){
+        let prev_cell = document.getElementById(prev_id)as HTMLInputElement;
+        prev_cell.style.borderRadius = "0px";
+        prev_cell.style.borderWidth = "0px";
+       }
+       
+
+
+       let crnt_cell = document.getElementById(current_id)as HTMLInputElement;
+       crnt_cell.style.borderRadius = "50px";
+       crnt_cell.style.borderWidth = "5px";
+       crnt_cell.style.borderColor = "blue";
+       crnt_cell.style.borderStyle = "solid";
+   }, 10000 );
+ }
+
 
 }

@@ -3,4 +3,5 @@ from . import view
 
 urlpatterns = [
     path("", view.getData),
+    path("rl/", view.getDataRL),
 ]

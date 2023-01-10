@@ -1,6 +1,7 @@
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from AILogic import main
+from AILogic import RL
 
 @api_view(['GET'])
 def getData(request):
@@ -14,4 +15,15 @@ def getData(request):
     col2 = request.GET["col2"]
     exec_time, alg_output, path_cost = main.run(alg, type1, type2, row1,col1, row2,col2)
     output  = {'exec_time':exec_time,'alg_output':alg_output,'path_cost':path_cost }
+    return Response(output)
+
+
+@api_view(['GET'])
+def getDataRL(request):
+    #http://127.0.0.1:8000/?format=json&id=yasmine
+    op_states = RL.run_RL()
+    print("inside getDataRL")
+    # print(op_states)
+    output  = {'states':op_states}
+    print(output)
     return Response(output)

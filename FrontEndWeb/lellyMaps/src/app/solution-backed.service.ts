@@ -1,6 +1,7 @@
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { IAlgoSolutoin } from './responseApi/IAlgoSolution';
+import { IRL } from './responseApi/IRL';
 
 
 
@@ -11,7 +12,15 @@ export class SolutionBackedService {
 
   // _url = "http://127.0.0.1:8000/?alg=astar&col1=5&col2=20&format=json&row1=1&row2=1&type1=cord&type2=cord"
   _url = "http://127.0.0.1:8000"
+  _url_rl = "http://127.0.0.1:8000/rl"
   constructor(private _http: HttpClient) { }
+
+
+  getRL(){
+    let queryParams = new HttpParams();
+    queryParams = queryParams.append("format","json");
+    return this._http.get<IRL>(this._url_rl, {params:queryParams})
+  }
 
   getSolution(from:any, to:any, alg: any)
   {

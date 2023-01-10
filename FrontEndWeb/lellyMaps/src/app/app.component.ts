@@ -56,6 +56,7 @@ export class AppComponent {
   FinalToToZcMap: any;
   FinalAlgToZcMap: any;
   FinalCheckedToZcMap: any;
+  TypeOfSignalToZcMap: any;
 
   constructor(private solServiceData:SolutionBackedService){}
 
@@ -117,6 +118,12 @@ export class AppComponent {
     */
     this.notifyClick();
   }
+  ShowRLAppcomp(){
+    console.log("ShowRLAppcomp")
+    // this.eventsSubjectShowRl.next();
+    this.TypeOfSignalToZcMap = "search"
+    this.eventsSubject.next();
+  }
 
   
 
@@ -134,6 +141,7 @@ export class AppComponent {
     console.log("notiry",this.FinalToToZcMap)
     console.log("notiry",this.FinalAlgToZcMap)
     console.log("notiry",this.FinalCheckedToZcMap)
+    this.TypeOfSignalToZcMap = "search"
     this.eventsSubject.next();
   }
 }

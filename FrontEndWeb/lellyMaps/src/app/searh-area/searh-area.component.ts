@@ -26,6 +26,11 @@ export class SearhAreaComponent {
   @Output() FinalSignal = new EventEmitter()
   @Output() FinalAlgoChild = new EventEmitter()
   ///////////////////////////////////////////////
+
+  //////////////////////////////////////////////////
+  ///////////////emitter for sending singal to RL
+  //////////////////////////////////////////////////
+  @Output() ShowRL = new EventEmitter()
   ///// final alg chosen by user
   final_alg:string = ""
 
@@ -125,5 +130,9 @@ export class SearhAreaComponent {
     this.FinalAlgoChild.emit(this.final_alg);
     this.FinalSignal.emit();
 
+  }
+
+  show_rl(){
+   this.ShowRL.emit()
   }
 }
